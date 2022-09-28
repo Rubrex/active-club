@@ -4,7 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
 import "./Sidebar.css";
-const Sidebar = () => {
+const Sidebar = (props) => {
+  const { requiredTime } = props;
   return (
     <div className="sidebar-container">
       {/* Profile */}
@@ -56,7 +57,7 @@ const Sidebar = () => {
         <div className="study-time">
           <p className="strong">Study Time</p>
           <p className="silenced">
-            200 <span>Seconds</span>
+            {requiredTime} <span>Hours</span>
           </p>
         </div>
         <div className="break-time">

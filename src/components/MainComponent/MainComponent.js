@@ -7,7 +7,12 @@ import Sidebar from "./Sidebar/Sidebar";
 const MainComponent = () => {
   // states
   const [subjects, setSubjects] = useState([]);
-
+  const [requiredTime, setRequiredTime] = useState(0);
+  // handlers function
+  const handleAddToList = (time) => {
+    const totalTime = requiredTime + parseFloat(time);
+    setRequiredTime(totalTime);
+  };
   // Side Effects
   useEffect(() => {
     fetch("subjects-data.json")
@@ -30,12 +35,12 @@ const MainComponent = () => {
         {/* Subjects Sections */}
         <div className="subjects-container">
           {subjects.map((subject) => (
-            <Subject subject={subject} />
+            <Subject subject={subject} handleAddToList={handleAddToList} />
           ))}
         </div>
       </main>
       <div className="sidebar-section">
-        <Sidebar />
+        <Sidebar requiredTime={requiredTime} />
       </div>
     </section>
   );
