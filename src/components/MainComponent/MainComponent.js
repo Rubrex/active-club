@@ -35,7 +35,11 @@ const MainComponent = () => {
         {/* Subjects Sections */}
         <div className="subjects-container">
           {subjects.map((subject) => (
-            <Subject subject={subject} handleAddToList={handleAddToList} />
+            <Subject
+              key={subject.id}
+              subject={subject}
+              handleAddToList={handleAddToList}
+            />
           ))}
         </div>
       </main>

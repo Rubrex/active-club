@@ -22,8 +22,8 @@ const FrequentlyAsked = () => {
         Frequently Asked Questions w Answers
       </h1>
       <div className="faq-sections">
-        {questions_ans.map((quesAns) => (
-          <QuestionAnswered quesAns={quesAns} />
+        {questions_ans.map((quesAns, index) => (
+          <QuestionAnswered key={index} quesAns={quesAns} />
         ))}
       </div>
     </div>

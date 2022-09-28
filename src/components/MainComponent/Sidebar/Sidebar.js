@@ -54,8 +54,10 @@ const Sidebar = (props) => {
       <div className="add-break-container">
         <h3 style={{ fontWeight: "500" }}>Add a Break</h3>
         <div className="add-a-break">
-          {breakTimes.map((br) => (
-            <div onClick={(br) => handleBreakTime(br)}>{br}</div>
+          {breakTimes.map((br, index) => (
+            <div key={index} onClick={(br) => handleBreakTime(br)}>
+              {br}
+            </div>
           ))}
         </div>
       </div>
