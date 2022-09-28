@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import "./MainComponent.css";
-import Subject from "../Subject/Subject";
-import Sidebar from "../Sidebar/Sidebar";
+import Subject from "./Subject/Subject";
+import Sidebar from "./Sidebar/Sidebar";
 const MainComponent = () => {
   // states
   const [subjects, setSubjects] = useState([]);
