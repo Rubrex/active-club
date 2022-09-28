@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
@@ -6,6 +6,16 @@ import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import "./Sidebar.css";
 const Sidebar = (props) => {
   const { requiredTime } = props;
+
+  // states
+  const [breakTime, setBreakTime] = useState(0);
+  // Side Effects
+  // Handlers
+  const handleBreakTime = (breakTime) => {
+    setBreakTime(breakTime);
+  };
+  // Variables
+  const breakTimes = [2, 5, 10, 15, 30];
   return (
     <div className="sidebar-container">
       {/* Profile */}
@@ -44,11 +54,9 @@ const Sidebar = (props) => {
       <div className="add-break-container">
         <h3 style={{ fontWeight: "500" }}>Add a Break</h3>
         <div className="add-a-break">
-          <div>10s</div>
-          <div>20s</div>
-          <div>30s</div>
-          <div>40s</div>
-          <div>50s</div>
+          {breakTimes.map((br) => (
+            <div onClick={(br) => handleBreakTime(br)}>{br}</div>
+          ))}
         </div>
       </div>
       {/* Studied Durations Details */}
@@ -63,7 +71,7 @@ const Sidebar = (props) => {
         <div className="break-time">
           <p className="strong">Break Time</p>
           <p className="silenced">
-            200 <span>Seconds</span>
+            {breakTime} <span>Minutes</span>
           </p>
         </div>
       </div>

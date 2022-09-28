@@ -57,7 +57,7 @@
 }
 
 .add-a-break > div {
-  padding: 5px;
+  padding: 5px 10px;
   background-color: #fff;
   border-radius: 5px;
   cursor: pointer;
