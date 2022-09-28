@@ -66,6 +66,8 @@ const Sidebar = () => {
           </p>
         </div>
       </div>
+      {/* Activity complete BTN */}
+      <button className="btn-activity">Activity Completed</button>
     </div>
   );
 };

@@ -77,3 +77,15 @@
 .silenced {
   color: #a3adba;
 }
+/* Button */
+.btn-activity {
+  background-color: rgb(255, 206, 116);
+  color: rgb(31, 31, 31);
+  padding: 10px 0;
+  width: 100%;
+  border: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 40px;
+  font-size: 18px;
+}
