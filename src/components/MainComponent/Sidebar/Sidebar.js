@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import Swal from "sweetalert2";
 
 import "./Sidebar.css";
 const Sidebar = (props) => {
@@ -83,7 +84,21 @@ const Sidebar = (props) => {
         </div>
       </div>
       {/* Activity complete BTN */}
-      <button className="btn-activity">Activity Completed</button>
+
+      <button
+        className="btn-activity"
+        onClick={() =>
+          Swal.fire({
+            title: "Congratulations!",
+            text: "You've successfully completed your study",
+            icon: "success",
+            confirmButtonText: "Cool",
+            confirmButtonColor: "orange",
+          })
+        }
+      >
+        Activity Completed
+      </button>
     </div>
   );
 };
