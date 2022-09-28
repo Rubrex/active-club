@@ -1,0 +1,21 @@
+.main-component {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.cards-section {
+  padding: 80px;
+  border: 1px solid tomato;
+}
+.cards-section-title {
+  display: flex;
+  align-items: center;
+  color: orange;
+  margin-bottom: 40px;
+}
+.cards-section > p {
+  font-size: 20px;
+  font-weight: 600;
+}
+.sidebar-section {
+  border: 1px solid orchid;
+}
