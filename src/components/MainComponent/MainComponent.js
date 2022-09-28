@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDumbbell, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import "./MainComponent.css";
 import Subject from "../Subject/Subject";
+import Sidebar from "../Sidebar/Sidebar";
 const MainComponent = () => {
   return (
     <section className="main-component">
@@ -20,7 +21,9 @@ const MainComponent = () => {
           <Subject />
         </div>
       </main>
-      <div className="sidebar-section">World</div>
+      <div className="sidebar-section">
+        <Sidebar />
+      </div>
     </section>
   );
 };
