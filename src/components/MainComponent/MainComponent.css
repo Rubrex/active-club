@@ -4,7 +4,6 @@
 }
 .cards-section {
   padding: 80px;
-  border: 1px solid tomato;
 }
 .cards-section-title {
   display: flex;
@@ -17,5 +16,5 @@
   font-weight: 600;
 }
 .sidebar-section {
-  border: 1px solid orchid;
+  background-color: #fff;
 }
