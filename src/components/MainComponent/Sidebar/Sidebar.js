@@ -41,17 +41,17 @@ const Sidebar = (props) => {
       <div className="person-attributes">
         <div>
           <p className="top-p">
-            75 <span>kg</span>
+            58 <span>kg</span>
           </p>
           <p className="bot-p">Weight</p>
         </div>
         <div>
-          <p className="top-p">6.5</p>
+          <p className="top-p">5.6</p>
           <p className="bot-p">Height</p>
         </div>
         <div>
           <p className="top-p">
-            75 <span>yrs</span>
+            23 <span>yrs</span>
           </p>
           <p className="bot-p">Age</p>
         </div>
