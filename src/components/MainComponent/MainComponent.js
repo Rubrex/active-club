@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDumbbell, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
+import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import "./MainComponent.css";
 import Subject from "../Subject/Subject";
 import Sidebar from "../Sidebar/Sidebar";
