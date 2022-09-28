@@ -53,6 +53,22 @@ const Sidebar = () => {
           <div>50s</div>
         </div>
       </div>
+      {/* Studied Durations Details */}
+      <div>
+        <h3>Study Details</h3>
+        <div className="study-time">
+          <p className="strong">Study Time</p>
+          <p className="silenced">
+            200 <span>Seconds</span>
+          </p>
+        </div>
+        <div className="break-time">
+          <p className="strong">Break Time</p>
+          <p className="silenced">
+            200 <span>Seconds</span>
+          </p>
+        </div>
+      </div>
     </div>
   );
 };

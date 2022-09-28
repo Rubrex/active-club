@@ -1,6 +1,8 @@
 .sidebar-container {
   padding: 30px 30px;
   margin: 20px 0;
+  position: sticky;
+  top: 10px;
 }
 .sidebar-profile-container {
   display: flex;
@@ -27,12 +29,15 @@
   padding-right: 5px;
 }
 /* Persons Attributes */
-.person-attributes {
+.person-attributes,
+.add-a-break,
+.study-time,
+.break-time {
   display: flex;
   justify-content: space-around;
-  padding: 10px 20px;
+  padding: 15px 20px;
   background-color: #f0f1f3;
-  margin-top: 40px;
+  margin-top: 20px;
   border-radius: 10px;
 }
 .top-p {
@@ -50,14 +55,7 @@
 .add-break-container {
   margin: 20px 0;
 }
-.add-a-break {
-  display: flex;
-  justify-content: space-around;
-  padding: 15px 20px;
-  background-color: #f0f1f3;
-  margin-top: 20px;
-  border-radius: 10px;
-}
+
 .add-a-break > div {
   padding: 5px;
   background-color: #fff;
@@ -66,4 +64,16 @@
 }
 .add-a-break > div:hover {
   background-color: rgb(235, 235, 235);
+}
+/* Study details */
+.study-time,
+.break-time {
+  display: flex;
+  justify-content: space-between;
+}
+.strong {
+  font-weight: 500;
+}
+.silenced {
+  color: #a3adba;
 }
