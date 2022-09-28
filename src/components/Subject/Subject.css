@@ -1,0 +1,37 @@
+.subject-container {
+  padding: 10px 15px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.subject-container > img {
+  border-radius: 10px;
+}
+.sub-name {
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.sub-desc {
+  margin: 13px 0;
+  font-size: 15px;
+  color: rgb(53, 29, 0);
+}
+.sub-class,
+.sub-time {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.btn-add-to-list {
+  background-color: rgb(255, 206, 116);
+  color: rgb(31, 31, 31);
+  padding: 10px 0;
+  width: 100%;
+  border: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 18px;
+}
+.btn-add-to-list:hover {
+  background-color: rgb(255, 192, 74);
+}

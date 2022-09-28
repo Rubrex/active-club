@@ -18,7 +18,16 @@ const MainComponent = () => {
         <p>Select today's subjects</p>
         {/* Subjects Sections */}
         <div className="">
-          <Subject />
+          <Subject
+            subject={{
+              subject: "Physics",
+              image:
+                "https://images.pexels.com/photos/240163/pexels-photo-240163.jpeg?auto=compress&cs=tinysrgb&w=600",
+              desc: "The abstract science of number, quantity, and space, either as abstract concepts ( pure mathematics ), or as applied to other disciplines such as physics and engineering ( applied mathematics )",
+              time: "1h",
+              cls: "XI-XII",
+            }}
+          />
         </div>
       </main>
       <div className="sidebar-section">
