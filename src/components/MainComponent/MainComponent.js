@@ -17,13 +17,13 @@ const MainComponent = () => {
         </div>
         <p>Select today's subjects</p>
         {/* Subjects Sections */}
-        <div className="">
+        <div className="subjects-container">
           <Subject
             subject={{
               subject: "Physics",
               image:
                 "https://images.pexels.com/photos/240163/pexels-photo-240163.jpeg?auto=compress&cs=tinysrgb&w=600",
-              desc: "The abstract science of number, quantity, and space, either as abstract concepts ( pure mathematics ), or as applied to other disciplines such as physics and engineering ( applied mathematics )",
+              desc: "The abstract science of number, quantity, and space, either as abstract concepts ( pure mathematics ),",
               time: "1h",
               cls: "XI-XII",
             }}

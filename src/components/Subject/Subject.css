@@ -5,6 +5,7 @@
 }
 .subject-container > img {
   border-radius: 10px;
+  width: 100%;
 }
 .sub-name {
   font-weight: 600;
