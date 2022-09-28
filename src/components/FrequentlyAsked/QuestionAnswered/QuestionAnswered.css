@@ -3,3 +3,8 @@
   background-color: #fff;
   padding: 20px;
 }
+.question-container > p {
+  margin-top: 20px;
+  border-left: 5px solid orange;
+  padding-left: 10px;
+}
