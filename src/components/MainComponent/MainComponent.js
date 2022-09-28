@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import "./MainComponent.css";
 import Subject from "../Subject/Subject";
 import Sidebar from "../Sidebar/Sidebar";
 const MainComponent = () => {
+  // states
+  const [subjects, setSubjects] = useState([]);
+
+  // Side Effects
+  useEffect(() => {
+    fetch("subjects-data.json")
+      .then((response) => response.json())
+      .then((data) => setSubjects(data));
+  }, []);
+
+  //   JSX
   return (
     <section className="main-component">
       <main className="cards-section">
@@ -18,16 +29,9 @@ const MainComponent = () => {
         <p>Select today's subjects</p>
         {/* Subjects Sections */}
         <div className="subjects-container">
-          <Subject
-            subject={{
-              subject: "Physics",
-              image:
-                "https://images.pexels.com/photos/240163/pexels-photo-240163.jpeg?auto=compress&cs=tinysrgb&w=600",
-              desc: "The abstract science of number, quantity, and space, either as abstract concepts ( pure mathematics ),",
-              time: "1h",
-              cls: "XI-XII",
-            }}
-          />
+          {subjects.map((subject) => (
+            <Subject subject={subject} />
+          ))}
         </div>
       </main>
       <div className="sidebar-section">
