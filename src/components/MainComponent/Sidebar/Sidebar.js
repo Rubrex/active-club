@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
@@ -9,10 +9,15 @@ const Sidebar = (props) => {
 
   // states
   const [breakTime, setBreakTime] = useState(0);
+  const [breakTimeLocal, setBreakTimeLocal] = useState(0);
   // Side Effects
+  useEffect(() => {
+    setBreakTimeLocal(localStorage.getItem("break-time"));
+  }, [breakTime]);
   // Handlers
   const handleBreakTime = (breakTime) => {
     setBreakTime(breakTime);
+    localStorage.setItem("break-time", breakTime);
   };
   // Variables
   const breakTimes = [2, 5, 10, 15, 30];
@@ -55,7 +60,7 @@ const Sidebar = (props) => {
         <h3 style={{ fontWeight: "500" }}>Add a Break</h3>
         <div className="add-a-break">
           {breakTimes.map((br, index) => (
-            <div key={index} onClick={(br) => handleBreakTime(br)}>
+            <div key={index} onClick={() => handleBreakTime(br)}>
               {br}
             </div>
           ))}
@@ -73,7 +78,7 @@ const Sidebar = (props) => {
         <div className="break-time">
           <p className="strong">Break Time</p>
           <p className="silenced">
-            {breakTime} <span>Minutes</span>
+            {breakTimeLocal} <span>Minutes</span>
           </p>
         </div>
       </div>
