@@ -92,4 +92,10 @@
   cursor: pointer;
   margin-top: 40px;
   font-size: 18px;
+  transition: box-shadow 0.1s ease, transform 0.1s ease;
+}
+.btn-activity-container:hover .btn-activity {
+  background-color: rgb(250, 195, 92);
+  box-shadow: -3px 3px rgb(216, 159, 53);
+  transform: translate(3px, -3px);
 }

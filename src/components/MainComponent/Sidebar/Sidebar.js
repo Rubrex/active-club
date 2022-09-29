@@ -88,22 +88,23 @@ const Sidebar = (props) => {
         </div>
       </div>
       {/* Activity complete BTN */}
-
-      <button
-        className="btn-activity"
-        onClick={() =>
-          Swal.fire({
-            title: "Congratulations!",
-            text: "You've successfully completed your study",
-            icon: "success",
-            confirmButtonText: "Cool",
-            confirmButtonColor: "orange",
-            timer: 1500,
-          })
-        }
-      >
-        Activity Completed
-      </button>
+      <div className="btn-activity-container">
+        <button
+          className="btn-activity"
+          onClick={() =>
+            Swal.fire({
+              title: "Congratulations!",
+              text: "You've successfully completed your study",
+              icon: "success",
+              confirmButtonText: "Cool",
+              confirmButtonColor: "orange",
+              timer: 1500,
+            })
+          }
+        >
+          Activity Completed
+        </button>
+      </div>
     </div>
   );
 };
