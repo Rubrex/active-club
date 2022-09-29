@@ -90,9 +90,12 @@
   border: transparent;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 40px;
+
   font-size: 18px;
   transition: box-shadow 0.1s ease, transform 0.1s ease;
+}
+.btn-activity-container {
+  margin-top: 40px;
 }
 .btn-activity-container:hover .btn-activity {
   background-color: rgb(250, 195, 92);
