@@ -98,6 +98,7 @@ const Sidebar = (props) => {
             icon: "success",
             confirmButtonText: "Cool",
             confirmButtonColor: "orange",
+            timer: 1500,
           })
         }
       >
