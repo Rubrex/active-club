@@ -4,7 +4,9 @@
 }
 
 .cards-section {
-  padding: 80px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 40px;
 }
 .cards-section-title {
   display: flex;
@@ -35,6 +37,9 @@
   .subjects-container {
     grid-template-columns: repeat(2, 1fr);
   }
+  .cards-section {
+    padding: 10px;
+  }
 }
 @media screen and (max-width: 800px) {
   .main-component {
@@ -42,5 +47,8 @@
   }
   .subjects-container {
     grid-template-columns: 1fr;
+  }
+  .cards-section {
+    padding: 10px;
   }
 }
